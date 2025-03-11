@@ -37,6 +37,12 @@ export const schema = {
             "title": "Identifiant du champ client (customer field) correspondant",
             "type": "integer",
           },
+          "isRequired": {
+            "title": "Obligatoire",
+            "type": "boolean",
+            "format": "checkbox",
+            "default": false
+          },
           "comment": {
             "title": "Commentaire (pense-bête)",
             "type": "string",
