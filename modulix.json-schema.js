@@ -2,9 +2,9 @@ export const schema = {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "formId": {
+    "mailboxId": {
       "type": "integer",
-      "title": "Identifiant du formulaire"
+      "title": "Identifiant de la boîte mail associée"
     },
     "mailboxName": {
       "type": "string",
@@ -145,7 +145,7 @@ export const schema = {
     }
   },
   "required": [
-    "formId",
+    "mailboxId",
     "mailboxName",
     "personaSelectorId",
     "reasonSelectorId",
