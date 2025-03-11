@@ -22,11 +22,11 @@ export const schema = {
       "type": "integer",
       "title": "Identifiant du champ de sélection de sous-motif"
     },
-    "fieldMatches": {
+    "fieldConfigs": {
       "type": "array",
-      "title": "Correspondances des champs",
+      "title": "Champs",
       "items": {
-        "title": "Correspondance",
+        "title": "Configuration d'un champ",
         "type": "object",
         "properties": {
           "customFieldId": {
@@ -34,7 +34,7 @@ export const schema = {
             "type": "integer",
           },
           "customerFieldId": {
-            "title": "Identifiant du champ client (customer field)",
+            "title": "Identifiant du champ client (customer field) correspondant",
             "type": "integer",
           },
           "comment": {
@@ -150,7 +150,7 @@ export const schema = {
     "personaSelectorId",
     "reasonSelectorId",
     "subReasonSelectorId",
-    "fieldMatches",
+    "fieldConfigs",
     "personas"
   ]
 };
