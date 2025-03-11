@@ -83,7 +83,7 @@ export const schema = {
                     "title": "Sous-motifs",
                     "description": "Sous-motifs à proposer lorsque le motif est sélectionnée.",
                     "type": "array",
-                    "items": [
+                    "items":
                       {
                         "title": "Sous-motif",
                         "type": "object",
@@ -101,19 +101,7 @@ export const schema = {
                           "id",
                           "name"
                         ]
-                      },
-                      {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "integer"
-                          }
-                        },
-                        "required": [
-                          "id"
-                        ]
                       }
-                    ]
                   }
                 },
                 "required": [
