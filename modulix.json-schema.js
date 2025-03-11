@@ -22,6 +22,28 @@ export const schema = {
       "type": "integer",
       "title": "Identifiant du champ de sélection de sous-motif"
     },
+    "fieldMatches": {
+      "type": "array",
+      "title": "Correspondances des champs",
+      "items": {
+        "title": "Correspondance",
+        "type": "object",
+        "properties": {
+          "customFieldId": {
+            "title": "Identifiant du champ personalisé (custom field)",
+            "type": "integer",
+          },
+          "customerFieldId": {
+            "title": "Identifiant du champ client (customer field)",
+            "type": "integer",
+          },
+          "comment": {
+            "title": "Commentaire (pense-bête)",
+            "type": "string",
+          }
+        }
+      }
+    },
     "personas": {
       "type": "array",
       "title": "Personas",
@@ -128,6 +150,7 @@ export const schema = {
     "personaSelectorId",
     "reasonSelectorId",
     "subReasonSelectorId",
+    "fieldMatches",
     "personas"
   ]
 };
